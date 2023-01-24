@@ -65,7 +65,7 @@ def scrape(keyword, size):
 def search(keyword, size, minScrapeTime, maxScrapeTime):
     # this func query for the data in mysql and creates pandas dataframe
 
-    db = mysql.connector.connect(user='root', password='Jbidurkhe94!', host='localhost', database='flickr')
+    db = mysql.connector.connect(user='root', password='password', host='localhost', database='flickr')
     cursor = db.cursor()
     query1 = "SELECT * FROM images where keyword='" + keyword + "'  AND scrapeTime BETWEEN '" + minScrapeTime + "' AND '" + maxScrapeTime + "' ORDER BY 2 LIMIT " + str(
         size)
