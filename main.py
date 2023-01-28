@@ -23,7 +23,7 @@ while True:
         print("Keyword selected: ", keyword)
         break
 
-# Flickr.scrape(keyword, size)
+Flickr.scrape(keyword, size)
 
 minScrapeTime = input("Please enter the minimum scraping time to search in 'yyyy-mm-dd hh:mm:ss format: ")
 maxScrapeTime = datetime.now().isoformat(' ', 'seconds')
